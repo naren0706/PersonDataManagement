@@ -17,9 +17,17 @@ namespace PersonDataManagement
         }
         public void AverageAge(List<Person> list)
         {
-            var result = list.Average(x=> x.Age);
-            Console.WriteLine("the average age is :"+result);
+            var result = list.Average(x => x.Age);
+            Console.WriteLine("the average age is :" + result);
         }
+        public void RetriveDetailsByName(List<Person> list)
+        {
+            Console.WriteLine("ENter your name");
+            string name = Console.ReadLine();
+            var result = list.Where(x => x.Name == name);
+            Console.WriteLine("the average age is :" + result);
+        }
+
         private void Display(List<Person> result)
         {
             foreach (var item in result)
