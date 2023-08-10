@@ -25,7 +25,12 @@ namespace PersonDataManagement
             Console.WriteLine("ENter your name");
             string name = Console.ReadLine();
             var result = list.Where(x => x.Name == name);
-            Console.WriteLine("the average age is :" + result);
+            Display(result.ToList());
+        }
+        public void SkipAge(List<Person> list)
+        {
+            var result = list.SkipWhile(x => x.Age<60);
+            Display(result.ToList());
         }
 
         private void Display(List<Person> result)

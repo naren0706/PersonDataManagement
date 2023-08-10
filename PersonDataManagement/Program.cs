@@ -32,6 +32,7 @@ namespace PersonDataManagement
             operation.RetreiveAgeInBetween(li);
             operation.AverageAge(li);
             operation.RetriveDetailsByName(li);
+            operation.SkipAge(li);
         }
     }
 }
