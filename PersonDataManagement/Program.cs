@@ -29,6 +29,7 @@ namespace PersonDataManagement
             });
             Operation operation = new Operation();
             operation.RetreiveTopTwoRecords(li);
+            operation.RetreiveAgeInBetween(li);
         }
     }
 }
